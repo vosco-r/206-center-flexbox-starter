@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>main.css</title>
+</head>
+<body style="color: rgb(235, 246, 208); background-color: rgb(20, 20, 20)">
+<pre><code>
+<span style="color: rgb(210, 66, 166);">/*!&nbsp;HTML5&nbsp;Boilerplate&nbsp;v5.2.0&nbsp;|&nbsp;MIT&nbsp;License&nbsp;|&nbsp;https://html5boilerplate.com/&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;What&nbsp;follows&nbsp;is&nbsp;the&nbsp;result&nbsp;of&nbsp;much&nbsp;research&nbsp;on&nbsp;cross-browser&nbsp;styling.
+&nbsp;*&nbsp;Credit&nbsp;left&nbsp;inline&nbsp;and&nbsp;big&nbsp;thanks&nbsp;to&nbsp;Nicolas&nbsp;Gallagher,&nbsp;Jonathan&nbsp;Neal,
+&nbsp;*&nbsp;Kroc&nbsp;Camen,&nbsp;and&nbsp;the&nbsp;H5BP&nbsp;dev&nbsp;community&nbsp;and&nbsp;team.
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(210, 66, 166);">/*&nbsp;==========================================================================
+&nbsp;&nbsp;&nbsp;Base&nbsp;styles:&nbsp;opinionated&nbsp;defaults
+&nbsp;&nbsp;&nbsp;==========================================================================&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">html</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">color</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">#222</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">font-size</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1</span><span style="color: rgb(235, 246, 208);">em</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">line-height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1.4</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Remove&nbsp;text-shadow&nbsp;in&nbsp;selection&nbsp;highlight:
+&nbsp;*&nbsp;https://twitter.com/miketaylr/status/12228805301
+&nbsp;*
+&nbsp;*&nbsp;These&nbsp;selection&nbsp;rule&nbsp;sets&nbsp;have&nbsp;to&nbsp;be&nbsp;separate.
+&nbsp;*&nbsp;Customize&nbsp;the&nbsp;background&nbsp;color&nbsp;to&nbsp;match&nbsp;your&nbsp;design.
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+::</span><span style="color: rgb(235, 246, 208);">-moz-selection</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">background</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">#b3d4fc</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">text-shadow</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">none</span><span style="color: rgb(235, 246, 208);">;
+}
+
+::</span><span style="color: rgb(235, 246, 208);">selection</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">background</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">#b3d4fc</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">text-shadow</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">none</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;A&nbsp;better&nbsp;looking&nbsp;default&nbsp;horizontal&nbsp;rule
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">hr</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">display</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">block</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">border</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">border-top</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">solid</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">#ccc</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">margin</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1</span><span style="color: rgb(235, 246, 208);">em</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">padding</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Remove&nbsp;the&nbsp;gap&nbsp;between&nbsp;audio,&nbsp;canvas,&nbsp;iframes,
+&nbsp;*&nbsp;images,&nbsp;videos&nbsp;and&nbsp;the&nbsp;bottom&nbsp;of&nbsp;their&nbsp;containers:
+&nbsp;*&nbsp;https://github.com/h5bp/html5-boilerplate/issues/440
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">audio</span><span style="color: rgb(235, 246, 208);">,
+</span><span style="color: rgb(235, 246, 208);">canvas</span><span style="color: rgb(235, 246, 208);">,
+</span><span style="color: rgb(235, 246, 208);">iframe</span><span style="color: rgb(235, 246, 208);">,
+</span><span style="color: rgb(235, 246, 208);">img</span><span style="color: rgb(235, 246, 208);">,
+</span><span style="color: rgb(235, 246, 208);">svg</span><span style="color: rgb(235, 246, 208);">,
+</span><span style="color: rgb(235, 246, 208);">video</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">vertical-align</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">middle</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Remove&nbsp;default&nbsp;fieldset&nbsp;styles.
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">fieldset</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">border</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">margin</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">padding</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Allow&nbsp;only&nbsp;vertical&nbsp;resizing&nbsp;of&nbsp;textareas.
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">textarea</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">resize</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">vertical</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*&nbsp;==========================================================================
+&nbsp;&nbsp;&nbsp;Browser&nbsp;Upgrade&nbsp;Prompt
+&nbsp;&nbsp;&nbsp;==========================================================================&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">.browserupgrade</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">margin</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0.2</span><span style="color: rgb(235, 246, 208);">em</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">background</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">#ccc</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">color</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">#000</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">padding</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0.2</span><span style="color: rgb(235, 246, 208);">em</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*&nbsp;==========================================================================
+&nbsp;&nbsp;&nbsp;Author's&nbsp;custom&nbsp;styles
+&nbsp;&nbsp;&nbsp;==========================================================================&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(210, 66, 166);">/*Large&nbsp;Background&nbsp;Image*/</span><span style="color: rgb(235, 246, 208);">
+</span><span style="color: rgb(235, 246, 208);">html</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">background</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">url</span><span style="color: rgb(235, 246, 208);">(</span><span style="color: rgb(235, 246, 208);">..</span><span style="color: rgb(235, 246, 208);">/</span><span style="color: rgb(235, 246, 208);">img</span><span style="color: rgb(235, 246, 208);">/</span><span style="color: rgb(235, 246, 208);">bkgd2.jpg</span><span style="color: rgb(235, 246, 208);">)&nbsp;</span><span style="color: rgb(235, 246, 208);">no-repeat</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">center</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">center</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">fixed</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">background-size</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">cover</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">100</span><span style="color: rgb(83, 204, 219);">%</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;set&nbsp;height&nbsp;to&nbsp;100%&nbsp;-&nbsp;these&nbsp;are&nbsp;important&nbsp;for&nbsp;allowing&nbsp;content&nbsp;to&nbsp;vertically&nbsp;align&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+}
+
+</span><span style="color: rgb(235, 246, 208);">body</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">100</span><span style="color: rgb(83, 204, 219);">%</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;set&nbsp;height&nbsp;to&nbsp;100%&nbsp;-&nbsp;these&nbsp;are&nbsp;important&nbsp;for&nbsp;allowing&nbsp;content&nbsp;to&nbsp;vertically&nbsp;align&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+}
+
+</span><span style="color: rgb(235, 246, 208);">.wrapper</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;set&nbsp;the&nbsp;display&nbsp;to&nbsp;flex&nbsp;and&nbsp;use&nbsp;the&nbsp;justify-content&nbsp;&amp;&nbsp;align-items&nbsp;properties&nbsp;to&nbsp;center&nbsp;all&nbsp;child&nbsp;elements&nbsp;on&nbsp;the&nbsp;page&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">margin</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">100</span><span style="color: rgb(83, 204, 219);">%</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">width</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">100</span><span style="color: rgb(83, 204, 219);">%</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">display</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">flex</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">align-items</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">center</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">justify-content</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">center</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(235, 246, 208);">#content</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;set&nbsp;the&nbsp;display&nbsp;to&nbsp;flex&nbsp;and&nbsp;use&nbsp;the&nbsp;justify-content&nbsp;&amp;&nbsp;align-items&nbsp;properties&nbsp;to&nbsp;center&nbsp;the&nbsp;text&nbsp;within&nbsp;the&nbsp;div*/</span><span style="color: rgb(235, 246, 208);">
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">align-items</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">center</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">background</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">#222</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">background</span><span style="color: rgb(235, 246, 208);">:rgba</span><span style="color: rgb(235, 246, 208);">(</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">,</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">,</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">,</span><span style="color: rgb(245, 127, 42);">0.7</span><span style="color: rgb(235, 246, 208);">);
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">color</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">#fff</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">display</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">flex</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">font-family</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(150, 217, 255);">'Source&nbsp;Sans&nbsp;Pro'</span><span style="color: rgb(235, 246, 208);">,&nbsp;</span><span style="color: rgb(235, 246, 208);">sans-serif</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">font-weight</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">300</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">font-size</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1.25</span><span style="color: rgb(235, 246, 208);">em</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">justify-content</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">center</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">line-height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1.5</span><span style="color: rgb(235, 246, 208);">em</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">border-radius</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">10</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">padding</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">30</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">width</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">300</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">300</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(235, 246, 208);">#content</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">p</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">span</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">font-family</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(150, 217, 255);">'Lora'</span><span style="color: rgb(235, 246, 208);">,&nbsp;</span><span style="color: rgb(235, 246, 208);">sans-serif</span><span style="color: rgb(235, 246, 208);">;
+}
+
+
+
+
+
+</span><span style="color: rgb(210, 66, 166);">/*&nbsp;==========================================================================
+&nbsp;&nbsp;&nbsp;Helper&nbsp;classes
+&nbsp;&nbsp;&nbsp;==========================================================================&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Hide&nbsp;visually&nbsp;and&nbsp;from&nbsp;screen&nbsp;readers:
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">.hidden</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">display</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">none</span><span style="color: rgb(235, 246, 208);">&nbsp;!</span><span style="color: rgb(235, 246, 208);">important</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Hide&nbsp;only&nbsp;visually,&nbsp;but&nbsp;have&nbsp;it&nbsp;available&nbsp;for&nbsp;screen&nbsp;readers:
+&nbsp;*&nbsp;http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">.visuallyhidden</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">border</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">clip</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">rect</span><span style="color: rgb(235, 246, 208);">(</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">);
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">margin</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">-1</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">overflow</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">hidden</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">padding</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">position</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">absolute</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">width</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Extends&nbsp;the&nbsp;.visuallyhidden&nbsp;class&nbsp;to&nbsp;allow&nbsp;the&nbsp;element
+&nbsp;*&nbsp;to&nbsp;be&nbsp;focusable&nbsp;when&nbsp;navigated&nbsp;to&nbsp;via&nbsp;the&nbsp;keyboard:
+&nbsp;*&nbsp;https://www.drupal.org/node/897638
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">.visuallyhidden.focusable</span><span style="color: rgb(235, 246, 208);">:active</span><span style="color: rgb(235, 246, 208);">,
+</span><span style="color: rgb(235, 246, 208);">.visuallyhidden.focusable</span><span style="color: rgb(235, 246, 208);">:focus</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">clip</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">auto</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">height</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">auto</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">margin</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">0</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">overflow</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">visible</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">position</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">static</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">width</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">auto</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Hide&nbsp;visually&nbsp;and&nbsp;from&nbsp;screen&nbsp;readers,&nbsp;but&nbsp;maintain&nbsp;layout
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">.invisible</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">visibility</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">hidden</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;*&nbsp;Clearfix:&nbsp;contain&nbsp;floats
+&nbsp;*
+&nbsp;*&nbsp;For&nbsp;modern&nbsp;browsers
+&nbsp;*&nbsp;1.&nbsp;The&nbsp;space&nbsp;content&nbsp;is&nbsp;one&nbsp;way&nbsp;to&nbsp;avoid&nbsp;an&nbsp;Opera&nbsp;bug&nbsp;when&nbsp;the
+&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;`contenteditable`&nbsp;attribute&nbsp;is&nbsp;included&nbsp;anywhere&nbsp;else&nbsp;in&nbsp;the&nbsp;document.
+&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;Otherwise&nbsp;it&nbsp;causes&nbsp;space&nbsp;to&nbsp;appear&nbsp;at&nbsp;the&nbsp;top&nbsp;and&nbsp;bottom&nbsp;of&nbsp;elements
+&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;that&nbsp;receive&nbsp;the&nbsp;`clearfix`&nbsp;class.
+&nbsp;*&nbsp;2.&nbsp;The&nbsp;use&nbsp;of&nbsp;`table`&nbsp;rather&nbsp;than&nbsp;`block`&nbsp;is&nbsp;only&nbsp;necessary&nbsp;if&nbsp;using
+&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;`:before`&nbsp;to&nbsp;contain&nbsp;the&nbsp;top-margins&nbsp;of&nbsp;child&nbsp;elements.
+&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(235, 246, 208);">.clearfix</span><span style="color: rgb(235, 246, 208);">:before</span><span style="color: rgb(235, 246, 208);">,
+</span><span style="color: rgb(235, 246, 208);">.clearfix</span><span style="color: rgb(235, 246, 208);">:after</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">content</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(150, 217, 255);">"&nbsp;"</span><span style="color: rgb(235, 246, 208);">;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;1&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">display</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">table</span><span style="color: rgb(235, 246, 208);">;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;2&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+}
+
+</span><span style="color: rgb(235, 246, 208);">.clearfix</span><span style="color: rgb(235, 246, 208);">:after</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">clear</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">both</span><span style="color: rgb(235, 246, 208);">;
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*&nbsp;==========================================================================
+&nbsp;&nbsp;&nbsp;EXAMPLE&nbsp;Media&nbsp;Queries&nbsp;for&nbsp;Responsive&nbsp;Design.
+&nbsp;&nbsp;&nbsp;These&nbsp;examples&nbsp;override&nbsp;the&nbsp;primary&nbsp;('mobile&nbsp;first')&nbsp;styles.
+&nbsp;&nbsp;&nbsp;Modify&nbsp;as&nbsp;content&nbsp;requires.
+&nbsp;&nbsp;&nbsp;==========================================================================&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(83, 204, 219);">@media</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">only</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">screen</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">and</span><span style="color: rgb(235, 246, 208);">&nbsp;(</span><span style="color: rgb(235, 246, 208);">min-width</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">35</span><span style="color: rgb(235, 246, 208);">em</span><span style="color: rgb(235, 246, 208);">)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;Style&nbsp;adjustments&nbsp;for&nbsp;viewports&nbsp;that&nbsp;meet&nbsp;the&nbsp;condition&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+}
+
+</span><span style="color: rgb(83, 204, 219);">@media</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">print</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(</span><span style="color: rgb(235, 246, 208);">-webkit-min-device-pixel-ratio</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1.25</span><span style="color: rgb(235, 246, 208);">),
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(</span><span style="color: rgb(235, 246, 208);">min-resolution</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1.25</span><span style="color: rgb(235, 246, 208);">dppx</span><span style="color: rgb(235, 246, 208);">),
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(</span><span style="color: rgb(235, 246, 208);">min-resolution</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">120</span><span style="color: rgb(235, 246, 208);">dpi</span><span style="color: rgb(235, 246, 208);">)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;Style&nbsp;adjustments&nbsp;for&nbsp;high&nbsp;resolution&nbsp;devices&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+}
+
+</span><span style="color: rgb(210, 66, 166);">/*&nbsp;==========================================================================
+&nbsp;&nbsp;&nbsp;Print&nbsp;styles.
+&nbsp;&nbsp;&nbsp;Inlined&nbsp;to&nbsp;avoid&nbsp;the&nbsp;additional&nbsp;HTTP&nbsp;request:
+&nbsp;&nbsp;&nbsp;http://www.phpied.com/delay-loading-your-print-css/
+&nbsp;&nbsp;&nbsp;==========================================================================&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+</span><span style="color: rgb(83, 204, 219);">@media</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">print</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;*,
+&nbsp;&nbsp;&nbsp;&nbsp;*</span><span style="color: rgb(235, 246, 208);">:before</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;*</span><span style="color: rgb(235, 246, 208);">:after</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">background</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">transparent</span><span style="color: rgb(235, 246, 208);">&nbsp;!</span><span style="color: rgb(235, 246, 208);">important</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">color</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">#000</span><span style="color: rgb(235, 246, 208);">&nbsp;!</span><span style="color: rgb(235, 246, 208);">important</span><span style="color: rgb(235, 246, 208);">;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*&nbsp;Black&nbsp;prints&nbsp;faster:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.sanbeiji.com/archives/953&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">box-shadow</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">none</span><span style="color: rgb(235, 246, 208);">&nbsp;!</span><span style="color: rgb(235, 246, 208);">important</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">text-shadow</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">none</span><span style="color: rgb(235, 246, 208);">&nbsp;!</span><span style="color: rgb(235, 246, 208);">important</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">a</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">a</span><span style="color: rgb(235, 246, 208);">:visited</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">text-decoration</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">underline</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">a</span><span style="color: rgb(235, 246, 208);">[</span><span style="color: rgb(235, 246, 208);">href</span><span style="color: rgb(235, 246, 208);">]</span><span style="color: rgb(235, 246, 208);">:after</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">content</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(150, 217, 255);">"&nbsp;("</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">attr</span><span style="color: rgb(235, 246, 208);">(</span><span style="color: rgb(235, 246, 208);">href</span><span style="color: rgb(235, 246, 208);">)&nbsp;</span><span style="color: rgb(150, 217, 255);">")"</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">abbr</span><span style="color: rgb(235, 246, 208);">[</span><span style="color: rgb(235, 246, 208);">title</span><span style="color: rgb(235, 246, 208);">]</span><span style="color: rgb(235, 246, 208);">:after</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">content</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(150, 217, 255);">"&nbsp;("</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">attr</span><span style="color: rgb(235, 246, 208);">(</span><span style="color: rgb(235, 246, 208);">title</span><span style="color: rgb(235, 246, 208);">)&nbsp;</span><span style="color: rgb(150, 217, 255);">")"</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Don't&nbsp;show&nbsp;links&nbsp;that&nbsp;are&nbsp;fragment&nbsp;identifiers,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;or&nbsp;use&nbsp;the&nbsp;`javascript:`&nbsp;pseudo&nbsp;protocol
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">a</span><span style="color: rgb(235, 246, 208);">[</span><span style="color: rgb(235, 246, 208);">href</span><span style="color: rgb(235, 246, 208);">^=</span><span style="color: rgb(150, 217, 255);">"#"</span><span style="color: rgb(235, 246, 208);">]</span><span style="color: rgb(235, 246, 208);">:after</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">a</span><span style="color: rgb(235, 246, 208);">[</span><span style="color: rgb(235, 246, 208);">href</span><span style="color: rgb(235, 246, 208);">^=</span><span style="color: rgb(150, 217, 255);">"javascript:"</span><span style="color: rgb(235, 246, 208);">]</span><span style="color: rgb(235, 246, 208);">:after</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">content</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(150, 217, 255);">""</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">pre</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">blockquote</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">border</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">1</span><span style="color: rgb(235, 246, 208);">px</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(235, 246, 208);">solid</span><span style="color: rgb(235, 246, 208);">&nbsp;</span><span style="color: rgb(245, 127, 42);">#999</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">page-break-inside</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">avoid</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(210, 66, 166);">/*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Printing&nbsp;Tables:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;http://css-discuss.incutio.com/wiki/Printing_Tables
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span><span style="color: rgb(235, 246, 208);">
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">thead</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">display</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">table-header-group</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">tr</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">img</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">page-break-inside</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">avoid</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">img</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">max-width</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">100</span><span style="color: rgb(83, 204, 219);">%</span><span style="color: rgb(235, 246, 208);">&nbsp;!</span><span style="color: rgb(235, 246, 208);">important</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">p</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">h2</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">h3</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">orphans</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">3</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">widows</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(245, 127, 42);">3</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">h2</span><span style="color: rgb(235, 246, 208);">,
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">h3</span><span style="color: rgb(235, 246, 208);">&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(235, 246, 208);">page-break-after</span><span style="color: rgb(235, 246, 208);">:&nbsp;</span><span style="color: rgb(235, 246, 208);">avoid</span><span style="color: rgb(235, 246, 208);">;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</span></code></pre></body>
+</html>
